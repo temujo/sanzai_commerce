@@ -1,0 +1,9 @@
+Sanzai_CLI.egg-info/PKG-INFO
+Sanzai_CLI.egg-info/SOURCES.txt
+Sanzai_CLI.egg-info/dependency_links.txt
+Sanzai_CLI.egg-info/entry_points.txt
+Sanzai_CLI.egg-info/requires.txt
+Sanzai_CLI.egg-info/top_level.txt
+cli/__init__.py
+cli/cli.py
+cli/commands/__init__.py
