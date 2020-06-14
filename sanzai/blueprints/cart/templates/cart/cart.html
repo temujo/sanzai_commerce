@@ -1,0 +1,92 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Дэлгүүр - Санзай{% endblock %}
+{% block meta_description %}Санзай Дэлгүүр{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('cart.static', filename='styles/cart.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="nav-spacer"></div>
+<div class="container">
+    <h1 class="page-title" id="page--title"><i class="fas fa-shopping-cart"></i>&nbsp;Сагс</h1>
+    <div class="shopping-cart">
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='img/product-suu.jpg') }}">
+            </div>
+            <div class="product-details">
+                <div class="product-title"><h5>Монгол сүү</h5></div>
+                <p class="product-description">Hiimiin bodistoi huurai сүү.</p>
+            </div>
+            <div class="product-price">1500</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Устгах&nbsp;<i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="product-line-price">0</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="{{ url_for('static', filename='img/hero.jpg') }}">
+            </div>
+            <div class="product-details">
+                <div class="product-title"><h5>Монгол сүү</h5></div>
+                <p class="product-description" style="font-size: 80%;"> Хуурай сүү.</p>
+            </div>
+            <div class="product-price">10000</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Устгах&nbsp;<i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="product-line-price">0</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Үндсэн үнэ</label>
+                <div class="totals-value" id="cart-subtotal">0</div>
+            </div>
+            <div class="totals-item">
+                <label>Хүргэлтийн үнэ</label>
+                <div class="totals-value" id="cart-shipping">0</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Нийт үнэ</label>
+                <div class="totals-value" id="cart-total">0</div>
+            </div>
+            <div style="display: flex;">
+                <a href="{{ url_for('product.store') }}" class="btn btn-lg btn-secondary" style="display: flex; align-items: center;" role="button">
+                    <i class="fas fa-reply"></i>&nbsp;Буцах
+                </a>
+            </div>
+            <a href="#" class="btn btn-success btn-lg mb-4 order-btn" role="button" style="width: 100%;">
+                <i class="fas fa-cart-arrow-down"></i>&nbsp;Захиалах
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('cart.static', filename='scripts/cart.js') }}"></script>
+{% endblock %}

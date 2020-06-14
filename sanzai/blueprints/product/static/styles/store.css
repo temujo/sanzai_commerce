@@ -1,0 +1,73 @@
+/* bootstrap navbar fg-grey:           9A9DA0 */
+/* red:                                8B2635 */
+/* green-btn:                          0C7C59 */
+/* green-bg                            A3B18A */
+/* filter-bg                           DCDCDD */
+
+/* ------------------------------------------ */
+/* Store control */
+/* ------------------------------------------ */
+.item-count-label {
+    margin-bottom: 0;
+    color: #303030;
+}
+.custom-filter-toggler { /* change button color and space */
+    background-color: #BE6447;
+    border-color: #BE6447;
+    color: white;
+}
+.store-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#store-filters {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #DFD4CD;
+}
+.filter-label {
+    font-weight: 500;
+    font-size: 18px;
+}
+.submit-group {
+    text-align: center;
+}
+/* ------------------------------------------ */
+/* Store products */
+/* ------------------------------------------ */
+.product {
+    background-color: white;
+}
+.custom-card-body {
+    padding: 0.5rem;
+}
+.custom-card-title {
+    margin-bottom: .25rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+}
+.custom-card-description {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #606060;
+}
+.custom-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: #303030;
+}
+.custom-add-btn {
+    color: white;
+    margin-top: 3px;
+    width: 100%;
+    background-color: #3c69a6;
+    border-color: #3c69a6;
+}
+
+.badge-danger {
+    background-color: #28536B;
+}

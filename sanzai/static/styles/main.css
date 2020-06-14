@@ -1,0 +1,122 @@
+/* bootstrap navbar fg-grey:           9A9DA0 */
+/* red:                                8B2635 */
+/* green-btn:                          0C7C59 */
+/* green-bg                            A3B18A */
+/* filter-bg                           DCDCDD */
+
+/* ------------------------------------------ */
+/* Basic Setup */
+/* ------------------------------------------ */
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #EDE7E3;
+    color: #303030;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav-spacer {  /* Hack to not let elemtns go under fixed-top navbar */
+    margin-top: 60px;
+}
+.page-title {
+    color: #303030;
+    display: inline-block;
+}
+.page-title:after { /* Page title underline */
+    display: block;
+    height: 4px;
+    background-color: #206048;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+/* ------------------------------------------ */
+/* Navbar */
+/* ------------------------------------------ */
+.navbar-custom {
+    background-color: #206048;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-custom .navbar-nav .nav-link:first-child {
+    margin-top: 10px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-collapse {  /* align collapsible nav to center */
+    text-align: center;
+}
+.navbar-custom .nav-link {         /* Make nav items vertically spaced out */
+    padding: 15px 0 15px 0;
+    font-size: large;
+}
+.nav-link:after {                  /* Little knob under nav links to give user gauge on where to press */
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: " ";
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.navbar-custom .navbar-brand {     /* Weird hack to make logo vertically even with basket */
+    padding-top: 0;
+    padding-bottom: 0.4rem;
+}
+ion-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.my-cart-btn {
+    color: white;
+}
+
+/* ------------------------------------------ */
+/* Landing page */
+/* ------------------------------------------ */
+.landing {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("/static/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.landing .container { /* vertically center */
+    align-self: center;
+}
+.landing h1 {        /* space between button and header */
+    margin-bottom: 30px;
+}
+.landing .btn-success { /* change button color and space */
+    background-color: #297A5C;
+    border-color: #297A5C;
+    margin-right: 10px;
+}
+.landing .btn-secondary {  /* change button color */
+    background-color: #BE6447;
+    border-color: #BE6447;
+}

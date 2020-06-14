@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Санзай{% endblock %}
+{% block meta_description %}Санзай{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid landing">
+    <div class="container">
+        <h1 class="text-white font-weight-light">ОНЛАЙН ХҮРГЭЛТ<br>САНЗАЙН ДЭЛГҮҮРЭЭС.</h1>
+        <a href="{{ url_for('product.store') }}" class="btn btn-success btn-lg" role="button">
+            ДЭЛГҮҮР
+        </a>
+        <a href="#" class="btn btn-secondary btn-lg" role="button">
+            ХЭРХЭН&nbsp;<i class="far fa-question-circle"></i>
+        </a>
+    </div>
+</div>
+{% endblock %}
