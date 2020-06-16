@@ -1,4 +1,4 @@
-FROM python:3.8.3-slim-buster
+FROM python:3.7.5-slim-buster
 MAINTAINER Temuujin Natsagnyam <temuujin.natsagnyam@gmail.com>
 
 ENV INSTALL_PATH /sanzai

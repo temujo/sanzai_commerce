@@ -2,3 +2,4 @@
 .dockerignore
 .idea
 venv
+instance/settings.py
