@@ -26,13 +26,17 @@ body {
     display: flex;
     flex-direction: column;
 }
-.nav-spacer {  /* Hack to not let elemtns go under fixed-top navbar */
-    margin-top: 60px;
-}
 .page-title {
     color: #303030;
     display: inline-block;
+    margin-top: 65px;
 }
+@media (min-width: 768px) {
+    .page-title {
+        margin-top: 110px;
+    }
+}
+
 .page-title:after { /* Page title underline */
     display: block;
     height: 4px;
