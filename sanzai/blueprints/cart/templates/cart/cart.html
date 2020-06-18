@@ -10,6 +10,9 @@
 {% block content %}
 <div class="container">
     <h1 class="page-title" id="page--title"><i class="fas fa-shopping-cart"></i>&nbsp;Сагс</h1>
+    {{ flash.render() }}
+</div>
+<div class="container">
     <div class="shopping-cart">
         <div class="column-labels">
             <label class="product-image">Image</label>

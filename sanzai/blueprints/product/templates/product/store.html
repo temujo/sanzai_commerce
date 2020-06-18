@@ -11,6 +11,9 @@
 {% block content %}
 <div class="container">
     <h1 class="page-title"><i class="fas fa-store"></i>&nbsp;Дэлгүүр</h1>
+    {{ flash.render() }}
+</div>
+<div class="container">
     <div class="store-control">
         <h6 class="item-count-label">16 бүтээгдэхүүн</h6>
         <button type="button" class="btn custom-filter-toggler" data-toggle="collapse" data-target="#store-filters">

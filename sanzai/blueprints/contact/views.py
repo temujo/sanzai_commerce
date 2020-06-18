@@ -22,7 +22,7 @@ def index():
         deliver_contact_email.delay(request.form.get('email'),
                                     request.form.get('message'))
 
-        flash('Хүлээн авлаа.', 'success')
+        flash('Хүлээн авлаа. Thank you!', 'success')
         return redirect(url_for('contact.index'))
 
     return render_template('contact/index.html', form=form)

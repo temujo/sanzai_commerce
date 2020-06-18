@@ -7,11 +7,13 @@ questions or concerns.{% endblock %}
 
 {% block content %}
 <div class="container">
+    <h1 class="page-title"><i class="fas fa-headset"></i>&nbsp;Холбогдох</h1>
+    {{ flash.render() }}
+</div>
+<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 well">
             {% call f.form_tag('contact.index') %}
-                <h1 class="page-title"><i class="fas fa-headset"></i>&nbsp;Холбогдох</h1>
-
                 {% call f.form_group(form.email, css_class='margin-bottom', placeholder='E-mail хаяг...') %}
                 {% endcall %}
 
@@ -19,7 +21,6 @@ questions or concerns.{% endblock %}
                                      placeholder='Бодолоо үлдээнэ үү...',
                                      rows='12') %}
                 {% endcall %}
-
                 <button type="submit" class="btn btn-primary">E-mail илгээх</button>
             {% endcall %}
         </div>
